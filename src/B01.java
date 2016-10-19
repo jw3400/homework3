@@ -7,7 +7,7 @@ public class B01 {
 		int [] num = new int[3];
 			for(int i=0; i<num.length; i++)
 				{
-					System.out.println( i+1 + "¹øÂ° ¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä. :  ");
+					System.out.println( i+1 + "ë²ˆì§¸ ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”. :  ");
 					num[i] = su.nextInt();
 				}
 			
@@ -33,7 +33,7 @@ public class B01 {
 		}
 		max_num = num[num.length-1];
 		min_num = num[0];
-		System.out.println("°¡Àå Å« ¼ö´Â " + max_num + " ÀÌ°í, °¡Àå ÀÛÀº ¼ö´Â " + min_num + " ÀÔ´Ï´Ù!");
+		System.out.println("ê°€ì¥ í° ìˆ˜ëŠ” " + max_num + " ì´ê³ , ê°€ì¥ ì‘ì€ ìˆ˜ëŠ” " + min_num + " ì…ë‹ˆë‹¤!");
 			
 	} 
 	

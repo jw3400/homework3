@@ -4,13 +4,13 @@ public class B02 {
 	void input() {
 		
 		Scanner su = new Scanner(System.in);
-		System.out.print("¾ÆÆÄÆ® ºĞ¾ç ¸éÀû(Á¦°ö¹ÌÅÍ)À» ÀÔ·ÂÇÏ¼¼¿ä. : ");
+		System.out.print("ì•„íŒŒíŠ¸ ë¶„ì–‘ ë©´ì (ì œê³±ë¯¸í„°)ì„ ì…ë ¥í•˜ì„¸ìš”. : ");
 		double m2_area = su.nextDouble();
 			
 		double pyung_area = cal(m2_area);
-		System.out.print("¾ÆÆÄÆ®ÀÇ ÆòÇüÀº ");
-		System.out.printf("%.2f", pyung_area); 		// ¾ÆÆÄÆ®ÀÇ Æò¼ö¸¦ ¼Ò¼öÁ¡ µÑÂ°Â¥¸®±îÁö Ç¥½ÃÇÏµµ·Ï ¼±¾ğ
-		System.out.print("ÀÔ´Ï´Ù. \n");
+		System.out.print("ì•„íŒŒíŠ¸ì˜ í‰í˜•ì€ ");
+		System.out.printf("%.2f", pyung_area); 		// ì•„íŒŒíŠ¸ì˜ í‰ìˆ˜ë¥¼ ì†Œìˆ˜ì  ë‘˜ì§¸ì§œë¦¬ê¹Œì§€ í‘œì‹œí•˜ë„ë¡ ì„ ì–¸
+		System.out.print("ì…ë‹ˆë‹¤. \n");
 		 
 		print(pyung_area);
 		su.close();
@@ -29,19 +29,19 @@ public class B02 {
 	void print(double pyung_area) {
 		
 		if(pyung_area > 0 && pyung_area < 15){
-			System.out.print("¼ÒÇü ¾ÆÆÄÆ® ÀÔ´Ï´Ù.");
+			System.out.print("ì†Œí˜• ì•„íŒŒíŠ¸ ì…ë‹ˆë‹¤.");
 		}
 		else if(pyung_area >= 15 && pyung_area < 30) {
-			System.out.print("Áß¼ÒÇü ¾ÆÆÄÆ® ÀÔ´Ï´Ù.");
+			System.out.print("ì¤‘ì†Œí˜• ì•„íŒŒíŠ¸ ì…ë‹ˆë‹¤.");
 		}
 		else if(pyung_area >= 30 && pyung_area < 50) {
-			System.out.print("ÁßÇü ¾ÆÆÄÆ® ÀÔ´Ï´Ù.");
+			System.out.print("ì¤‘í˜• ì•„íŒŒíŠ¸ ì…ë‹ˆë‹¤.");
 		}
 		else if(pyung_area >= 50) {
-			System.out.print("´ëÇü ¾ÆÆÄÆ® ÀÔ´Ï´Ù.");
+			System.out.print("ëŒ€í˜• ì•„íŒŒíŠ¸ ì…ë‹ˆë‹¤.");
 		}
 		else
-			System.out.print("¾ÆÆÄÆ®ÀÇ Æò¼ö ÀÔ·ÂÀ» Àß¸øÇÏ¼Ì½À´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇØÁÖ½Ê½Ã¿À.");
+			System.out.print("ì•„íŒŒíŠ¸ì˜ í‰ìˆ˜ ì…ë ¥ì„ ì˜ëª»í•˜ì…¨ìŠµë‹ˆë‹¤. ë‹¤ì‹œ ì…ë ¥í•´ì£¼ì‹­ì‹œì˜¤.");
 			
 	} 
 	

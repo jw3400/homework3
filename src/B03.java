@@ -6,17 +6,17 @@ public class B03 {
 		Scanner su = new Scanner(System.in);
 		int  [][] score = { {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}, {31, 28, 31, 30, 31,  30, 31, 31, 30, 31, 30 ,31} };
 		for(int i = 0; i < score.length; i++) {
-				 /* System.out.print(" " + i + "Çà:" + " "); */
+				 /* System.out.print(" " + i + "í–‰:" + " "); */
 			for(int j = 0; j < score[i].length; j++) {
 				/*System.out.print(score[i][j] + "  "); */
 			}
 			/* System.out.println(" "); */
 		}
 		
-		System.out.print("¿ùÀ» ÀÔ·ÂÇÏ¼¼¿ä. : ");
+		System.out.print("ì›”ì„ ì…ë ¥í•˜ì„¸ìš”. : ");
 		int month = su.nextInt();
 		
-		System.out.print("ÀÏÀ» ÀÔ·ÂÇÏ¼¼¿ä. : ");
+		System.out.print("ì¼ì„ ì…ë ¥í•˜ì„¸ìš”. : ");
 		int day =su.nextInt();
 
 		day_count(score, month, day);
@@ -31,37 +31,37 @@ public class B03 {
 		int day_count=0;
 		if(month >= 1 && month <= 12) {
 			for(int i = 1; i <= month; i++) {
-				day_count += score [1][i-1]; 		// ÀÔ·ÂÇÑ month±îÁöÀÇ ÃÑ ÀÏ ¼ö¸¦ ±¸ÇÏ´Â °è»ê½Ä[¿¹¸¦µé¸é 3¿ùÀÌ¸é 3¿ù¸»±îÁöÀÇ ÀÏ ¼ö °è»ê]
+				day_count += score [1][i-1]; 		// ì…ë ¥í•œ monthê¹Œì§€ì˜ ì´ ì¼ ìˆ˜ë¥¼ êµ¬í•˜ëŠ” ê³„ì‚°ì‹[ì˜ˆë¥¼ë“¤ë©´ 3ì›”ì´ë©´ 3ì›”ë§ê¹Œì§€ì˜ ì¼ ìˆ˜ ê³„ì‚°]
 			}
 				
 			 if(day >= 1 && day <= 31){
 					if(month == 2){
 							if(day >=29 && day <= 31){
-								System.out.println("2¿ùÀº 1~28ÀÏ±îÁö ÀÔ·ÂÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù.(Àß¸ø ÀÔ·ÂÇÏ¼Ì½À´Ï´Ù.)");
+								System.out.println("2ì›”ì€ 1~28ì¼ê¹Œì§€ ì…ë ¥í•˜ì‹¤ ìˆ˜ ìˆìŠµë‹ˆë‹¤.(ì˜ëª» ì…ë ¥í•˜ì…¨ìŠµë‹ˆë‹¤.)");
 								System.exit(day_count);
 						}
 					}
 					else if(month == 4 || month == 6 || month == 9 || month == 11 ) {
 							if(day>=31) {
-								System.out.println("ÀÔ·ÂÇÏ½Å " + month  + "¿ùÀº 30ÀÏ±îÁö ÀÔ·ÂÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù.(Àß¸ø ÀÔ·ÂÇÏ¼Ì½À´Ï´Ù.)");
+								System.out.println("ì…ë ¥í•˜ì‹  " + month  + "ì›”ì€ 30ì¼ê¹Œì§€ ì…ë ¥í•˜ì‹¤ ìˆ˜ ìˆìŠµë‹ˆë‹¤.(ì˜ëª» ì…ë ¥í•˜ì…¨ìŠµë‹ˆë‹¤.)");
 								System.exit(day_count);
 						}
 					}
 				 		day_count =  day_count - score [1][month-1] +  day;				
-						System.out.println("±¸ÇÏ°íÀÚ ÇÏ´Â ÃÑ ÀÏ ¼ö : " + day_count);
+						System.out.println("êµ¬í•˜ê³ ì í•˜ëŠ” ì´ ì¼ ìˆ˜ : " + day_count);
 					}
 				else  
 				{
-					System.out.println("1~31ÀÏ¿¡ ÇØ´çÇÏÁö ¾Ê´Â ¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼Ì½À´Ï´Ù.(Àß¸ø ÀÔ·ÂÇÏ¼Ì½À´Ï´Ù.)");	
+					System.out.println("1~31ì¼ì— í•´ë‹¹í•˜ì§€ ì•ŠëŠ” ìˆ«ìë¥¼ ì…ë ¥í•˜ì…¨ìŠµë‹ˆë‹¤.(ì˜ëª» ì…ë ¥í•˜ì…¨ìŠµë‹ˆë‹¤.)");	
 			 		System.exit(day_count);
 				}							
 		}
 		else 
 		{
-			System.out.println("1~12¿ù¿¡ ÇØ´çÇÏÁö ¾Ê´Â ¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼Ì½À´Ï´Ù.(Àß¸ø ÀÔ·ÂÇÏ¼Ì½À´Ï´Ù.)");
+			System.out.println("1~12ì›”ì— í•´ë‹¹í•˜ì§€ ì•ŠëŠ” ìˆ«ìë¥¼ ì…ë ¥í•˜ì…¨ìŠµë‹ˆë‹¤.(ì˜ëª» ì…ë ¥í•˜ì…¨ìŠµë‹ˆë‹¤.)");
 			System.exit(day_count);
 		}	
-		System.out.println("ÀÌ ³¯Â¥´Â 1³â Áß " + day_count + " ¹øÂ° ³¯¿¡ ÇØ´çµË´Ï´Ù.");
+		System.out.println("ì´ ë‚ ì§œëŠ” 1ë…„ ì¤‘ " + day_count + " ë²ˆì§¸ ë‚ ì— í•´ë‹¹ë©ë‹ˆë‹¤.");
 		}
 
 	
